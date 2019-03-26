@@ -183,20 +183,20 @@ $EndComp
 $Comp
 L appli_switch:B3U-3000P_SPST-NO_SMD SW2
 U 1 1 5C98B167
-P 2625 7025
-F 0 "SW2" H 2700 7175 50  0000 R CNN
-F 1 "B3U-3000P_SPST-NO_SMD" H 3150 6925 50  0000 R CNN
-F 2 "Applidyne_Switch:B3U-3000P" H 2625 6785 20  0001 C CNN
-F 3 "http://www.farnell.com/cad/1520836.pdf" H 2625 6760 20  0001 C CNN
-F 4 "OMRON" H 2625 6710 20  0001 C CNN "manf"
-F 5 "B3U-3000P" H 2625 6685 20  0001 C CNN "manf#"
-F 6 "Element 14" H 2625 6660 20  0001 C CNN "Supplier"
-F 7 "1333655" H 2625 6635 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/omron-electronic-components/b3u-3000p/tactile-switch-side-actuated-smd/dp/1333655" H 2625 6610 20  0001 C CNN "Supplier URL"
-F 9 "0.985" H 2625 6585 20  0001 C CNN "Supplier Price"
-F 10 "5" H 2625 6560 20  0001 C CNN "Supplier Price Break"
-	1    2625 7025
-	1    0    0    -1  
+P 2675 7025
+F 0 "SW2" H 2750 7175 50  0000 R CNN
+F 1 "B3U-3000P_SPST-NO_SMD" H 3200 6925 50  0000 R CNN
+F 2 "Applidyne_Switch:B3U-3000P" H 2675 6785 20  0001 C CNN
+F 3 "http://www.farnell.com/cad/1520836.pdf" H 2675 6760 20  0001 C CNN
+F 4 "OMRON" H 2675 6710 20  0001 C CNN "manf"
+F 5 "B3U-3000P" H 2675 6685 20  0001 C CNN "manf#"
+F 6 "Element 14" H 2675 6660 20  0001 C CNN "Supplier"
+F 7 "1333655" H 2675 6635 20  0001 C CNN "Supplier Part No"
+F 8 "http://au.element14.com/omron-electronic-components/b3u-3000p/tactile-switch-side-actuated-smd/dp/1333655" H 2675 6610 20  0001 C CNN "Supplier URL"
+F 9 "0.985" H 2675 6585 20  0001 C CNN "Supplier Price"
+F 10 "5" H 2675 6560 20  0001 C CNN "Supplier Price Break"
+	1    2675 7025
+	-1   0    0    -1  
 $EndComp
 $Comp
 L appli_regulator:AP2112K-3.3 U3
@@ -577,8 +577,6 @@ Text GLabel 3375 5200 0    50   Output ~ 0
 ~RESET
 Text GLabel 2050 7025 0    50   Input ~ 0
 ~RESET
-Wire Wire Line
-	2225 7025 2050 7025
 Wire Wire Line
 	3075 7025 3225 7025
 Wire Wire Line
@@ -1230,19 +1228,19 @@ Wire Wire Line
 $Comp
 L appli_device:BAV99_DUAL D2
 U 1 1 5CE826D8
-P 8175 3475
-F 0 "D2" H 7950 3550 50  0000 L CNN
-F 1 "BAV99_DUAL" H 7625 3375 50  0000 L CNN
-F 2 "Applidyne_SOT:SOT-363-6N" H 8375 2975 20  0001 C CNN
-F 3 "https://au.mouser.com/datasheet/2/115/BAV99DWQ-957844.pdf" H 8375 2950 20  0001 C CNN
-F 4 "DIODES INC" H 8375 2900 20  0001 C CNN "manf"
-F 5 "Mouser" H 8375 2850 20  0001 C CNN "Supplier"
-F 6 "621-BAV99DWQ-7-F" H 8375 2825 20  0001 C CNN "Supplier Part No"
-F 7 "https://au.mouser.com/ProductDetail/Diodes-Incorporated/BAV99DWQ-7-F?qs=%2Fha2pyFadugbjpoXdMyhy2eBL9DIvFzvByad0dCCvUY%3D" H 8375 2800 20  0001 C CNN "Supplier URL"
-F 8 "0.340" H 8375 2775 20  0001 C CNN "Supplier Price"
-F 9 "10" H 8375 2750 20  0001 C CNN "Supplier Price Break"
-F 10 "BAV99DWQ-7-F" H 8375 2875 20  0001 C CNN "manf#"
-	1    8175 3475
+P 8725 2750
+F 0 "D2" H 8500 2825 50  0000 L CNN
+F 1 "BAV99_DUAL" H 8175 2650 50  0000 L CNN
+F 2 "Applidyne_SOT:SOT-363-6N" H 8925 2250 20  0001 C CNN
+F 3 "https://au.mouser.com/datasheet/2/115/BAV99DWQ-957844.pdf" H 8925 2225 20  0001 C CNN
+F 4 "DIODES INC" H 8925 2175 20  0001 C CNN "manf"
+F 5 "Mouser" H 8925 2125 20  0001 C CNN "Supplier"
+F 6 "621-BAV99DWQ-7-F" H 8925 2100 20  0001 C CNN "Supplier Part No"
+F 7 "https://au.mouser.com/ProductDetail/Diodes-Incorporated/BAV99DWQ-7-F?qs=%2Fha2pyFadugbjpoXdMyhy2eBL9DIvFzvByad0dCCvUY%3D" H 8925 2075 20  0001 C CNN "Supplier URL"
+F 8 "0.340" H 8925 2050 20  0001 C CNN "Supplier Price"
+F 9 "10" H 8925 2025 20  0001 C CNN "Supplier Price Break"
+F 10 "BAV99DWQ-7-F" H 8925 2150 20  0001 C CNN "manf#"
+	1    8725 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1301,19 +1299,19 @@ Wire Wire Line
 $Comp
 L appli_device:BAV99_DUAL D2
 U 2 1 5CE83FC7
-P 8725 2750
-F 0 "D2" H 8500 2825 50  0000 L CNN
-F 1 "BAV99_DUAL" H 8175 2650 50  0000 L CNN
-F 2 "Applidyne_SOT:SOT-363-6N" H 8925 2250 20  0001 C CNN
-F 3 "https://au.mouser.com/datasheet/2/115/BAV99DWQ-957844.pdf" H 8925 2225 20  0001 C CNN
-F 4 "DIODES INC" H 8925 2175 20  0001 C CNN "manf"
-F 5 "Mouser" H 8925 2125 20  0001 C CNN "Supplier"
-F 6 "621-BAV99DWQ-7-F" H 8925 2100 20  0001 C CNN "Supplier Part No"
-F 7 "https://au.mouser.com/ProductDetail/Diodes-Incorporated/BAV99DWQ-7-F?qs=%2Fha2pyFadugbjpoXdMyhy2eBL9DIvFzvByad0dCCvUY%3D" H 8925 2075 20  0001 C CNN "Supplier URL"
-F 8 "0.340" H 8925 2050 20  0001 C CNN "Supplier Price"
-F 9 "10" H 8925 2025 20  0001 C CNN "Supplier Price Break"
-F 10 "BAV99DWQ-7-F" H 8925 2150 20  0001 C CNN "manf#"
-	2    8725 2750
+P 8175 3475
+F 0 "D2" H 7950 3550 50  0000 L CNN
+F 1 "BAV99_DUAL" H 7625 3375 50  0000 L CNN
+F 2 "Applidyne_SOT:SOT-363-6N" H 8375 2975 20  0001 C CNN
+F 3 "https://au.mouser.com/datasheet/2/115/BAV99DWQ-957844.pdf" H 8375 2950 20  0001 C CNN
+F 4 "DIODES INC" H 8375 2900 20  0001 C CNN "manf"
+F 5 "Mouser" H 8375 2850 20  0001 C CNN "Supplier"
+F 6 "621-BAV99DWQ-7-F" H 8375 2825 20  0001 C CNN "Supplier Part No"
+F 7 "https://au.mouser.com/ProductDetail/Diodes-Incorporated/BAV99DWQ-7-F?qs=%2Fha2pyFadugbjpoXdMyhy2eBL9DIvFzvByad0dCCvUY%3D" H 8375 2800 20  0001 C CNN "Supplier URL"
+F 8 "0.340" H 8375 2775 20  0001 C CNN "Supplier Price"
+F 9 "10" H 8375 2750 20  0001 C CNN "Supplier Price Break"
+F 10 "BAV99DWQ-7-F" H 8375 2875 20  0001 C CNN "manf#"
+	2    8175 3475
 	1    0    0    -1  
 $EndComp
 Connection ~ 8175 3475
@@ -1438,4 +1436,6 @@ F 10 "10" H 9750 4325 59  0001 C CNN "Supplier Price Break"
 	1    9700 5775
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2050 7025 2225 7025
 $EndSCHEMATC
