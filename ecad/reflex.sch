@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power
-LIBS:74xx
+LIBS:reflex-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -92,57 +91,21 @@ $EndComp
 Text Notes 2200 900  0    50   ~ 0
 Device behaves as USB HID device.\nDraws power from host PC for board operation
 $Comp
-L appli_device:LED_GREEN_1608M D5
-U 1 1 5C989596
-P 8500 5750
-F 0 "D5" H 8500 5505 50  0000 C CNN
-F 1 "LED_GREEN_1608M" H 8500 5596 50  0000 C CNN
-F 2 "Applidyne_LED:LEDC1608X80L40N" H 8400 5750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1720200.pdf" H 8500 5540 50  0001 C CNN
-F 4 "DIALIGHT" H 8500 5330 60  0001 C CNN "manf"
-F 5 "5988070107F" H 8500 5240 60  0001 C CNN "manf#"
-F 6 "Element 14" H 8500 5140 60  0001 C CNN "Supplier"
-F 7 "1465991" H 8500 5040 60  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/dialight/5988070107f/led-0603-green-20mcd-566nm/dp/1465991" H 8510 4960 60  0001 C CNN "Supplier URL"
-F 9 "0.4" H 8500 4860 60  0001 C CNN "Supplier Price"
-F 10 "10" H 8500 4760 60  0001 C CNN "Supplier Price Break"
-	1    8500 5750
-	-1   0    0    1   
-$EndComp
-$Comp
-L appli_device:LED_YELLOW_1608M D4
-U 1 1 5C989A37
-P 8500 5350
-F 0 "D4" H 8500 5105 50  0000 C CNN
-F 1 "LED_YELLOW_1608M" H 8500 5196 50  0000 C CNN
-F 2 "Applidyne_LED:LEDC1608X80L40N" H 8500 5550 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1720200.pdf" H 8500 5140 50  0001 C CNN
-F 4 "DIALIGHT" H 8500 4930 60  0001 C CNN "manf"
-F 5 "5988040107F" H 8500 4840 60  0001 C CNN "manf#"
-F 6 "Element 14" H 8500 4740 60  0001 C CNN "Supplier"
-F 7 "1465989" H 8500 4640 60  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/dialight/5988040107f/led-yellow-0-8mm-x-1-1mm-130mcd/dp/1465989" H 8510 4560 60  0001 C CNN "Supplier URL"
-F 9 "0.29" H 8500 4460 60  0001 C CNN "Supplier Price"
-F 10 "10" H 8500 4360 60  0001 C CNN "Supplier Price Break"
-	1    8500 5350
-	-1   0    0    1   
-$EndComp
-$Comp
 L appli_device:APA102-2020 U4
 U 1 1 5C98A053
-P 10250 5800
-F 0 "U4" H 10375 6275 50  0000 C CNN
-F 1 "APA102-2020" H 10600 6175 50  0000 C CNN
-F 2 "Applidyne_LED:AP102_200X200X90L" H 10295 4860 50  0001 C CNN
-F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 10300 4240 50  0001 C CNN
-F 4 "DotStar" H 10300 5105 60  0001 C CNN "manf"
-F 5 "APA102–2020" H 10285 4940 60  0001 C CNN "manf#"
-F 6 "$5.95" H 10300 4450 60  0001 C CNN "Supplier Price"
-F 7 "Adafruit" H 10400 4550 60  0001 C CNN "Supplier"
-F 8 "https://www.adafruit.com/product/3341" H 10500 4650 60  0001 C CNN "Supplier URL"
-F 9 "3341" H 10300 4750 60  0001 C CNN "Supplier Part No"
-F 10 "10" H 10300 4350 59  0001 C CNN "Supplier Price Break"
-	1    10250 5800
+P 8700 5775
+F 0 "U4" H 8825 6250 50  0000 C CNN
+F 1 "APA102-2020" H 9050 6150 50  0000 C CNN
+F 2 "Applidyne_LED:AP102_200X200X90L" H 8745 4835 50  0001 C CNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 8750 4215 50  0001 C CNN
+F 4 "DotStar" H 8750 5080 60  0001 C CNN "manf"
+F 5 "APA102–2020" H 8735 4915 60  0001 C CNN "manf#"
+F 6 "$5.95" H 8750 4425 60  0001 C CNN "Supplier Price"
+F 7 "Adafruit" H 8850 4525 60  0001 C CNN "Supplier"
+F 8 "https://www.adafruit.com/product/3341" H 8950 4625 60  0001 C CNN "Supplier URL"
+F 9 "3341" H 8750 4725 60  0001 C CNN "Supplier Part No"
+F 10 "10" H 8750 4325 59  0001 C CNN "Supplier Price Break"
+	1    8700 5775
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -407,37 +370,37 @@ $EndComp
 $Comp
 L appli_power:+3.3V #PWR033
 U 1 1 5C98CA38
-P 10250 5250
-F 0 "#PWR033" H 10250 5210 30  0001 C CNN
-F 1 "+3.3V" H 10259 5388 30  0000 C CNN
-F 2 "" H 10250 5250 60  0000 C CNN
-F 3 "" H 10250 5250 60  0000 C CNN
-	1    10250 5250
+P 8700 5225
+F 0 "#PWR033" H 8700 5185 30  0001 C CNN
+F 1 "+3.3V" H 8709 5363 30  0000 C CNN
+F 2 "" H 8700 5225 60  0000 C CNN
+F 3 "" H 8700 5225 60  0000 C CNN
+	1    8700 5225
 	1    0    0    -1  
 $EndComp
 $Comp
 L appli_power:GND #PWR034
 U 1 1 5C98CA9E
-P 10250 6275
-F 0 "#PWR034" H 10250 6025 50  0001 C CNN
-F 1 "GND" H 10255 6102 50  0000 C CNN
-F 2 "" H 10250 6275 60  0000 C CNN
-F 3 "" H 10250 6275 60  0000 C CNN
-	1    10250 6275
+P 8700 6250
+F 0 "#PWR034" H 8700 6000 50  0001 C CNN
+F 1 "GND" H 8705 6077 50  0000 C CNN
+F 2 "" H 8700 6250 60  0000 C CNN
+F 3 "" H 8700 6250 60  0000 C CNN
+	1    8700 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 9700 5700 0    50   Input ~ 0
+Text GLabel 8150 5675 0    50   Input ~ 0
 LED_DATA
-Text GLabel 9700 5900 0    50   Input ~ 0
+Text GLabel 8150 5875 0    50   Input ~ 0
 LED_CLK
 Wire Wire Line
-	10250 6275 10250 6250
+	8700 6250 8700 6225
 Wire Wire Line
-	10250 5350 10250 5250
+	8700 5325 8700 5225
 Wire Wire Line
-	9700 5900 9800 5900
+	8150 5875 8250 5875
 Wire Wire Line
-	9800 5700 9700 5700
+	8250 5675 8150 5675
 Text GLabel 4425 3600 0    50   Output ~ 0
 LED_DATA
 Text GLabel 4425 3700 0    50   Output ~ 0
@@ -525,82 +488,10 @@ F 10 "1" V 1935 3450 20  0001 C CNN "Supplier Price Break"
 	1    1600 3600
 	0    1    1    0   
 $EndComp
-$Comp
-L appli_resistor:1K50_1608M R5
-U 1 1 5C99F520
-P 8100 5350
-F 0 "R5" V 7912 5200 50  0000 C CNN
-F 1 "1K50_1608M" V 7992 5200 35  0000 C CNN
-F 2 "Applidyne_Resistor:RESC1608X50N" V 8210 5200 20  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1716711.pdf" V 8235 5200 20  0001 C CNN
-F 4 "MULTICOMP" V 8285 5200 20  0001 C CNN "manf"
-F 5 "MCSR06X1501FTL" V 8310 5200 20  0001 C CNN "manf#"
-F 6 "Element14" V 8335 5200 20  0001 C CNN "Supplier"
-F 7 "2074192" V 8360 5200 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/multicomp/mcsr06x1501ftl/resistor-0603-1k5-1-anti-sulfur/dp/2074192" V 8385 5200 20  0001 C CNN "Supplier URL"
-F 9 "0.006" V 8410 5200 20  0001 C CNN "Supplier Price"
-F 10 "1" V 8435 5200 20  0001 C CNN "Supplier Price Break"
-	1    8100 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L appli_resistor:1K50_1608M R6
-U 1 1 5C99F58A
-P 8100 5750
-F 0 "R6" V 7912 5600 50  0000 C CNN
-F 1 "1K50_1608M" V 7992 5600 35  0000 C CNN
-F 2 "Applidyne_Resistor:RESC1608X50N" V 8210 5600 20  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1716711.pdf" V 8235 5600 20  0001 C CNN
-F 4 "MULTICOMP" V 8285 5600 20  0001 C CNN "manf"
-F 5 "MCSR06X1501FTL" V 8310 5600 20  0001 C CNN "manf#"
-F 6 "Element14" V 8335 5600 20  0001 C CNN "Supplier"
-F 7 "2074192" V 8360 5600 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/multicomp/mcsr06x1501ftl/resistor-0603-1k5-1-anti-sulfur/dp/2074192" V 8385 5600 20  0001 C CNN "Supplier URL"
-F 9 "0.006" V 8410 5600 20  0001 C CNN "Supplier Price"
-F 10 "1" V 8435 5600 20  0001 C CNN "Supplier Price Break"
-	1    8100 5750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 5350 8300 5350
-Wire Wire Line
-	8100 5750 8300 5750
-Wire Wire Line
-	8700 5750 8900 5750
-Wire Wire Line
-	8900 5750 8900 5350
-Wire Wire Line
-	8700 5350 8900 5350
-Wire Wire Line
-	8900 5750 8900 5850
-Connection ~ 8900 5750
-$Comp
-L appli_power:GND #PWR031
-U 1 1 5C9A32EA
-P 8900 5850
-F 0 "#PWR031" H 8900 5600 50  0001 C CNN
-F 1 "GND" H 8905 5677 50  0000 C CNN
-F 2 "" H 8900 5850 60  0000 C CNN
-F 3 "" H 8900 5850 60  0000 C CNN
-	1    8900 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 5350 7700 5350
-Wire Wire Line
-	7800 5750 7700 5750
-Text GLabel 7700 5350 0    50   Input ~ 0
-STATUS_TRIGGER
-Text GLabel 7700 5750 0    50   Input ~ 0
-STATUS_CAPTURE
-Text Notes 9075 5000 0    79   ~ 16
+Text Notes 7525 4975 0    79   ~ 16
 RGB LED
-Text Notes 9725 5025 0    50   ~ 0
+Text Notes 8175 5000 0    50   ~ 0
 Used for bootloader status etc\nAlso provides optional user feedback
-Text Notes 6775 5000 0    79   ~ 16
-STATUS LEDS
-Text Notes 7600 5025 0    50   ~ 0
-Provides visual for trigger/capture.\nShares programming pins...
 Wire Wire Line
 	3500 5600 3425 5600
 Wire Wire Line
@@ -1474,63 +1365,13 @@ Wire Wire Line
 	10400 3000 10400 2850
 Wire Wire Line
 	10400 2850 10325 2850
-$Comp
-L appli_device:APA102-2020 U5
-U 1 1 5CEE0FC2
-P 11250 5800
-F 0 "U5" H 11375 6275 50  0000 C CNN
-F 1 "APA102-2020" H 11600 6175 50  0000 C CNN
-F 2 "Applidyne_LED:AP102_200X200X90L" H 11295 4860 50  0001 C CNN
-F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 11300 4240 50  0001 C CNN
-F 4 "DotStar" H 11300 5105 60  0001 C CNN "manf"
-F 5 "APA102–2020" H 11285 4940 60  0001 C CNN "manf#"
-F 6 "$5.95" H 11300 4450 60  0001 C CNN "Supplier Price"
-F 7 "Adafruit" H 11400 4550 60  0001 C CNN "Supplier"
-F 8 "https://www.adafruit.com/product/3341" H 11500 4650 60  0001 C CNN "Supplier URL"
-F 9 "3341" H 11300 4750 60  0001 C CNN "Supplier Part No"
-F 10 "10" H 11300 4350 59  0001 C CNN "Supplier Price Break"
-	1    11250 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 5900 10800 5900
-Wire Wire Line
-	10700 5700 10800 5700
-$Comp
-L appli_power:GND #PWR036
-U 1 1 5CEEC670
-P 11250 6275
-F 0 "#PWR036" H 11250 6025 50  0001 C CNN
-F 1 "GND" H 11255 6102 50  0000 C CNN
-F 2 "" H 11250 6275 60  0000 C CNN
-F 3 "" H 11250 6275 60  0000 C CNN
-	1    11250 6275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11250 6275 11250 6250
-$Comp
-L appli_power:+3.3V #PWR035
-U 1 1 5CEF20D3
-P 11250 5250
-F 0 "#PWR035" H 11250 5210 30  0001 C CNN
-F 1 "+3.3V" H 11259 5388 30  0000 C CNN
-F 2 "" H 11250 5250 60  0000 C CNN
-F 3 "" H 11250 5250 60  0000 C CNN
-	1    11250 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11250 5350 11250 5250
-NoConn ~ 11700 5700
-NoConn ~ 11700 5900
 Wire Wire Line
 	8325 4175 8725 4175
 $Comp
-L appli_device:BAV99_DUAL D?
+L appli_device:BAV99_DUAL D3
 U 1 1 5CF04034
 P 8725 4175
-F 0 "D?" H 8500 4250 50  0000 L CNN
+F 0 "D3" H 8500 4250 50  0000 L CNN
 F 1 "BAV99_DUAL" H 8175 4075 50  0000 L CNN
 F 2 "Applidyne_SOT:SOT-363-6N" H 8925 3675 20  0001 C CNN
 F 3 "https://au.mouser.com/datasheet/2/115/BAV99DWQ-957844.pdf" H 8925 3650 20  0001 C CNN
@@ -1547,4 +1388,54 @@ $EndComp
 Connection ~ 8725 4175
 Wire Wire Line
 	8725 4175 8925 4175
+Wire Wire Line
+	9150 5875 9250 5875
+Wire Wire Line
+	9150 5675 9250 5675
+NoConn ~ 10150 5875
+NoConn ~ 10150 5675
+Wire Wire Line
+	9700 5325 9700 5225
+$Comp
+L appli_power:+3.3V #PWR035
+U 1 1 5CEF20D3
+P 9700 5225
+F 0 "#PWR035" H 9700 5185 30  0001 C CNN
+F 1 "+3.3V" H 9709 5363 30  0000 C CNN
+F 2 "" H 9700 5225 60  0000 C CNN
+F 3 "" H 9700 5225 60  0000 C CNN
+	1    9700 5225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 6250 9700 6225
+$Comp
+L appli_power:GND #PWR036
+U 1 1 5CEEC670
+P 9700 6250
+F 0 "#PWR036" H 9700 6000 50  0001 C CNN
+F 1 "GND" H 9705 6077 50  0000 C CNN
+F 2 "" H 9700 6250 60  0000 C CNN
+F 3 "" H 9700 6250 60  0000 C CNN
+	1    9700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L appli_device:APA102-2020 U5
+U 1 1 5CEE0FC2
+P 9700 5775
+F 0 "U5" H 9825 6250 50  0000 C CNN
+F 1 "APA102-2020" H 10050 6150 50  0000 C CNN
+F 2 "Applidyne_LED:AP102_200X200X90L" H 9745 4835 50  0001 C CNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 9750 4215 50  0001 C CNN
+F 4 "DotStar" H 9750 5080 60  0001 C CNN "manf"
+F 5 "APA102–2020" H 9735 4915 60  0001 C CNN "manf#"
+F 6 "$5.95" H 9750 4425 60  0001 C CNN "Supplier Price"
+F 7 "Adafruit" H 9850 4525 60  0001 C CNN "Supplier"
+F 8 "https://www.adafruit.com/product/3341" H 9950 4625 60  0001 C CNN "Supplier URL"
+F 9 "3341" H 9750 4725 60  0001 C CNN "Supplier Part No"
+F 10 "10" H 9750 4325 59  0001 C CNN "Supplier Price Break"
+	1    9700 5775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
