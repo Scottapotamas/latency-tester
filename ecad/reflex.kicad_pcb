@@ -1702,13 +1702,13 @@
   (gr_arc (start 109.25 120) (end 110 120) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 109.85 124.15) (end 104.15 129.85) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 110 120) (end 110 123.8) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 101.9 106.6) (end 109.2 106.6) (layer Edge.Cuts) (width 0.15) (tstamp 5C9BA428))
+  (gr_line (start 101.9 106.6) (end 109.25 106.6) (layer Edge.Cuts) (width 0.15) (tstamp 5C9BA428))
   (gr_line (start 101.4 118.75) (end 101.4 107.1) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 109.3 119.25) (end 101.9 119.25) (layer Edge.Cuts) (width 0.15))
+  (gr_line (start 109.25 119.25) (end 101.9 119.25) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 92 77) (end 90 77) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 90 127.8) (end 90 95.2) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 103.8 130) (end 92.2 130) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 110 77) (end 110 105.9) (layer Edge.Cuts) (width 0.15) (tstamp 5C9BC457))
+  (gr_line (start 110 77) (end 110 105.85) (layer Edge.Cuts) (width 0.15) (tstamp 5C9BC457))
   (gr_line (start 92 75) (end 108 75) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 100.67 102.00499) (end 100.5 102.17499) (width 0.25) (layer F.Cu) (net 1))
@@ -2321,7 +2321,7 @@
     (connect_pads (clearance 0.358))
     (min_thickness 0.22)
     (keepout (tracks allowed) (vias allowed) (copperpour not_allowed))
-    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing fillet) (radius 0.2))
+    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 101.7 101.2) (xy 101.7 102.4) (xy 103 102.4) (xy 103 101.2)
