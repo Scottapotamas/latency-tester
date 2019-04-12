@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:reflex-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -442,14 +442,14 @@ Text GLabel 3250 1650 2    50   BiDi ~ 0
 USB_D-
 Text GLabel 3250 1750 2    50   BiDi ~ 0
 USB_D+
-Text GLabel 5925 4000 2    50   BiDi ~ 0
-USB_D-
 Text GLabel 5925 4100 2    50   BiDi ~ 0
+USB_D-
+Text GLabel 5925 4200 2    50   BiDi ~ 0
 USB_D+
 Wire Wire Line
-	5925 4100 5825 4100
+	5925 4200 5825 4200
 Wire Wire Line
-	5825 4000 5925 4000
+	5825 4100 5925 4100
 Wire Wire Line
 	4425 3700 4525 3700
 Wire Wire Line
@@ -1197,7 +1197,6 @@ NoConn ~ 4525 4300
 NoConn ~ 4525 4400
 NoConn ~ 5825 4400
 NoConn ~ 5825 4300
-NoConn ~ 5825 4200
 NoConn ~ 5825 3900
 NoConn ~ 5825 3800
 NoConn ~ 5825 3700
@@ -1438,4 +1437,5 @@ F 10 "10" H 9750 4325 59  0001 C CNN "Supplier Price Break"
 $EndComp
 Wire Wire Line
 	2050 7025 2225 7025
+NoConn ~ 5825 4000
 $EndSCHEMATC
